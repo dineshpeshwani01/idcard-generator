@@ -17,7 +17,7 @@ function generateIdCard(event) {
   }
 
   function previewImage(event){
-    console.log("event",event)
-    const output = document.getElementById('student-image');
-    output.scr = URL.createObjectURL(event.target.fileS[0]);
+    
+    const output = document.getElementById("student-image");
+    output.src = URL.createObjectURL(event.target.files[0]);
   }

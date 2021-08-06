@@ -35,7 +35,8 @@
                   type="text"
                   id="student-name"
                   placeholder="Enter your name here"
-                  class="border"
+                  class="border p-2 shadow-xl"
+                  required
                 />
               </div>
               <div class="flex flex-col w-60 mt-4">
@@ -46,18 +47,20 @@
                   type="text"
                   id="college-name"
                   placeholder="Enter college name here"
-                  class="border"
+                  class="border p-2 shadow-xl"
+                  required
                 />
               </div>
               <div class="flex flex-col w-60 mt-4">
-                <label for="location-name" class="font-semibold"
+                <label for="location-name" class="font-semibold "
                   >Enter Location</label
                 >
                 <input
                   type="text"
                   id="location-name"
                   placeholder="Enter location here"
-                  class="border"
+                  class="border p-2 shadow-xl"
+                  required
                 />
               </div>
                
@@ -67,12 +70,12 @@
                 <input
                   type="file"
                   id="image-upload"
-                  class="border"
+                  class="border p-2 shadow-xl"
                   onchange="previewImage(event)"/>
               </div>
 
               <button
-                class="bg-indigo-700 text-white mt-4 px-3 py-1 rounded"
+                class="bg-indigo-700 text-white mt-4 px-3 py-1 rounded shadow-xl"
                 onclick="generateIdCard(event)"
               >
                 Generate Card
@@ -85,7 +88,7 @@
             <div class="text-indigo-600 text-xl">Generated ID Card</div>
             <div
               id="student-id-card"
-              class="border w-80 border-black h-48 rounded flex"
+              class="border w-80 border-black h-48 rounded flex shadow-2xl"
             >
               <div
                 id="student-image-container"
